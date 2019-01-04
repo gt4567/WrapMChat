@@ -214,6 +214,7 @@ Widget::~Widget()
     }
 }
 
+//得到QRCode 并显示QRCode图片
 void Widget::on_pushButton_clicked()
 {
     VariantClear(&vtStringRet_GetQRCode);
@@ -239,6 +240,7 @@ void Widget::on_pushButton_clicked()
     }
 }
 
+//设置支付信息
 void Widget::on_pushButton_2_clicked()
 {
     double amount = 6000.0;
@@ -301,6 +303,7 @@ void Widget::on_pushButton_2_clicked()
     }
 }
 
+//生成QRCode
 void Widget::on_pushButton_3_clicked()
 {
     VariantClear(&vtStringRet_GenerateQRCode);
@@ -325,6 +328,7 @@ void Widget::on_pushButton_3_clicked()
     qDebug()<<"MChat GenerateQRCode:"<<ret;
 }
 
+//检查支付状态
 void Widget::on_pushButton_4_clicked()
 {
     VariantClear(&vtStringRet_CheckQRCode);
